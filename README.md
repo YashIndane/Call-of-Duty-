@@ -1,1 +1,3 @@
-# Call-of-Duty-
+# Call-of-Duty
+
+![](images/codmr.png)
