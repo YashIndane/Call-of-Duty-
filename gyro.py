@@ -4,10 +4,10 @@ import binascii
 import pyautogui
 import joblib
 
-UDP_IP = 
+UDP_IP = ''
 UDP_PORT = 
-model = joblib.load('rf_classifier')
-scaler = joblib.load('scaler_rf')
+model = joblib.load('svm_classifier')
+scaler = joblib.load('scaler_svm')
   
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
 sock.bind((UDP_IP, UDP_PORT)) 
@@ -18,6 +18,8 @@ commands = [  '',
               'pyautogui.keyUp("w")',
               'pyautogui.click(button="right")',
               'pyautogui.keyDown("w")',
+              'pyautogui.drag(-150, 0, 0.7, button="left")', 
+              'pyautogui.drag(150, 0, 0.7, button="left")' 
               
            ]
 
@@ -46,6 +48,8 @@ with open('orientations.csv' , 'a' , newline = '') as f :
 
         p = scaler.transform([row_])
         m = model.predict(p)[0]  
+
+        #print(m)
         
         if abs(m - temp) !=0 :
              
@@ -62,17 +66,28 @@ with open('orientations.csv' , 'a' , newline = '') as f :
 
                 if m == 1 and temp == 2 :
                     pyautogui.click(button="right")
+
+                
                         
                         
                 #exec(commands[m])
              except: c__ = 0
-             exec(commands[m])
+             if m in (4,5) and temp == 3:
+                pyautogui.keyUp("w")
+                pyautogui.mouseDown(button='left')
+                pyautogui.drag(-150, 0, 0.7)
+                pyautogui.mouseUp(button='left')
+             else:
+                exec(commands[m])   
+
+             if m in (4 , 5):
+                    pyautogui.moveTo(950 , 570)
+                    
+             
+             
              
 
 
  
         temp = m
         #print(m)                                     
-
-   
-    
