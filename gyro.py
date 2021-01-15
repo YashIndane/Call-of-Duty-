@@ -5,8 +5,8 @@ import binascii
 import pyautogui
 import joblib
 
-UDP_IP = '192.168.29.176'
-UDP_PORT = 5600
+UDP_IP = ''
+UDP_PORT = 
 model = joblib.load('svm_classifier')
 scaler = joblib.load('scaler_svm')
   
