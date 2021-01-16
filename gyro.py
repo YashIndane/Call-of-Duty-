@@ -4,6 +4,8 @@ import socket
 import binascii
 import pyautogui
 import joblib
+import threading
+import speech_recognition as SR
 
 UDP_IP = ''
 UDP_PORT = 
@@ -23,9 +25,12 @@ commands = [  '',
               'pyautogui.drag(170, 0, 0.5,button="left")' 
            ]
 
-temp = 1
 
-while True: 
+RECOG = SR.Recognizer()
+
+def phone_controller():
+    temp = 1
+    while True: 
 
         buffer_size = 1024  
         data, addr = sock.recvfrom(buffer_size)  
@@ -73,7 +78,34 @@ while True:
 
              if m in (4 , 5):
                     pyautogui.moveTo(950 , 570)
+        
            
              
         temp = m
-        #print(m)                                     
+        #print(m)   
+
+def voice_controls():
+    while True:
+      with SR.Microphone() as source :
+
+        RECOG.adjust_for_ambient_noise(source)
+        audio = RECOG.listen(source) 
+
+        try :  
+            movement = RECOG.recognize_google(audio) 
+
+            if movement == 'reload' :
+                pyautogui.press('r')
+            if movement == 'jump' :
+                pyautogui.press('space')   
+
+        except Exception as e : pass  
+
+          
+                                         
+phone_controller_thread = threading.Thread(target = phone_controller)
+voice_control_thread = threading.Thread(target = voice_controls)
+
+phone_controller_thread.start()
+voice_control_thread.start()
+
