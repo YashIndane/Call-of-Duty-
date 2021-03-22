@@ -11,4 +11,4 @@ After selecting Orientaion and filling the values, tap on send data.
 
 ![](images/zz.png)
 
-![Demo link](https://www.linkedin.com/feed/update/urn:li:activity:6779814634418401280/)
+[Demo link](https://www.linkedin.com/feed/update/urn:li:activity:6779814634418401280/)
