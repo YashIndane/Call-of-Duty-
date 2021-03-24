@@ -21,8 +21,14 @@ Getting your ip -
 Type in CMD `ipconfig` and get you IP. Now we need trainig data for 5 positions or movements. So we will store the training data in `orientations.csv`
 For each orientation, that is run the program `data_collector.py` 5 times for each move and be in that position for around `2 minutes`.
 
+Enter your IP and port number for UDP data transmission in `data_collector.py`.
+
 
 ![](movements.png)
+
+## Training the SVM model
+
+I have used Support Vector machine as it was giving good accuracy compared to others.
 
 
 
