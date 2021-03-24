@@ -52,3 +52,5 @@ I have used Support Vector machine as it was giving good accuracy compared to ot
 
 Start the game and go to settings > Controls and select `Simple Mode`.
 Now start your Game and execute the `demo.py` file and enjoy!!
+
+Open to PR's
