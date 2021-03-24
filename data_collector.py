@@ -35,22 +35,4 @@ with open('orientations.csv' , 'a' , newline = '') as f :
         row_.append(3)
 
         
-        writer.writerow(row_)
-
-
-
-
-
-
-        
-
-
-
-
-    
-
-   
-
-
-   
-    
+        writer.writerow(row_)  
