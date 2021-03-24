@@ -22,6 +22,8 @@ pip install numpy
 pip install SpeechRecognition
 ```
 
+![](demogif.gif)
+
 Download Bluestacks -> [link](https://www.bluestacks.com/)
 
 After downloading Bluestacks open it and go to discover apps and search for Call of Duty and install it.
