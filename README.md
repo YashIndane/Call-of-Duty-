@@ -4,6 +4,15 @@
 
 ![](images/codmr.jpg)
 
+## Installations 
+
+PyAutoGUI is a cross-platform GUI automation Python module for human beings. Used to programmatically control the mouse & keyboard.
+
+```
+pip install PyAutoGUI
+```
+
+
 Download Bluestacks -> [link](https://www.bluestacks.com/)
 
 After downloading Bluestacks open it and go to discover apps and search for Call of Duty and install it.
