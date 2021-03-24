@@ -12,6 +12,12 @@ PyAutoGUI is a cross-platform GUI automation Python module for human beings. Use
 pip install PyAutoGUI
 ```
 
+```
+pip install numpy
+```
+
+
+
 
 Download Bluestacks -> [link](https://www.bluestacks.com/)
 
