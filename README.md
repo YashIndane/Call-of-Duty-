@@ -16,8 +16,9 @@ pip install PyAutoGUI
 pip install numpy
 ```
 
-
-
+```
+pip install SpeechRecognition
+```
 
 Download Bluestacks -> [link](https://www.bluestacks.com/)
 
