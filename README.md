@@ -1,6 +1,6 @@
 # Call-of-Duty
 
-![](https://img.shields.io/badge/license-MIT-yellowgreen)  ![](https://img.shields.io/badge/python-3.8-red) ![](https://img.shields.io/badge/views-83.4k-lightblue?style=flat&logo=linkedin) ![](https://img.shields.io/badge/likes-4.1k-lightblue?style=flat&logo=linkedin)
+![](https://img.shields.io/badge/license-MIT-yellowgreen)  ![](https://img.shields.io/badge/python-3.8-red) ![](https://img.shields.io/badge/impressions-135.5k-lightblue?style=flat&logo=linkedin) ![](https://img.shields.io/badge/likes-4.1k-lightblue?style=flat&logo=linkedin)
 
 ![](images/codmr.jpg)
 
